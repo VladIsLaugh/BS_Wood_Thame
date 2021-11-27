@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11955,5 +11956,28 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn:disabled {
+  border: 0;
+  background-color: #C6C6C6;
+  color: #8D8D8D;
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.btn:focus {
+  padding: 10px;
+  -webkit-box-shadow: 0 0 0 2px #002D9B;
+          box-shadow: 0 0 0 2px #002D9B;
+  border: 1px solid #fff;
+}
+
+.btn-primary {
+  background-color: #0F61FD;
 }
 /*# sourceMappingURL=main.css.map */

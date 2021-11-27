@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,177 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Custom Bootstrap Sheme</title>
     <style>
-        span{
+        span {
             text-align: center;
             color: red;
         }
-        button{
+
+        button {
             margin: 10px;
+        }
+
+        div{
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
-    <div>
+     <!-- small buttons -->
+    <div class="container">
         <h4>Buttons Standart - Default 48-3</h4>
+
+        <!-- headers -->
         <div class="row">
-            <span style="width: 25%;">variants</span>
-            <span style="width: 15%;">disabled</span>
-            <span style="width: 15%;">enabled</span>
-            <span style="width: 15%;">hover</span>
-            <span style="width: 15%;">active</span>
-            <span style="width: 15%;">focus</span>
+            <span style="width: 10%;"></span>
+            <span style="width: 65%;">variants</span>
+            <span style="width: 25%;">disabled</span>
         </div>
 
+        <!-- primarty -->
         <div class="row">
-            <span style="width: 5%;">primary</span>
-            
-           <div style="width: 20%;">
-            <button class="btn btn-primary" style="width: 25%">Download</button>
-            <button class="btn btn-primary" style="width: 25%">Download</button>
-            <button class="btn btn-primary" style="width: 25%">Download</button>
-           </div> 
+            <span style="width: 10%;">primary</span>
+
+            <div style="width: 65%;">
+                <button class="btn btn-primary" >Download <i class="bi bi-download"></i></button>
+                <button class="btn btn-primary" ><i class="bi bi-download"></i></button>
+                <button class="btn btn-primary" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn btn-primary" disabled >Download</button>
+            </div>
+
+        </div>
+
+        <!-- secondary -->
+        <div class="row">
+            <span style="width: 10%;">secondary</span>
+
+            <div style="width: 65%;">
+                <button class="btn btn-secondary" >Download <i class="bi bi-download"></i></button>
+                <button class="btn btn-secondary" ><i class="bi bi-download"></i></button>
+                <button class="btn btn-secondary" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn btn-secondary" disabled>Download</button>
+            </div>
+
+        </div>
+
+        <!-- tertiary -->
+        <div class="row">
+            <span style="width: 10%;">tertiary</span>
+
+            <div style="width: 65%;">
+                <button class="btn btn-teriary" >Download <i class="bi bi-download"></i></button>
+                <button class="btn btn-teriary" ><i class="bi bi-download"></i></button>
+                <button class="btn btn-teriary" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn btn-teriary" disabled>Download</button>
+            </div>
+
+        </div>
+
+        <!-- primary link -->
+        <div class="row">
+            <span style="width: 10%;">primary link</span>
+
+            <div style="width: 65%;">
+                <button class="btn link-primary" >Download <i class="bi bi-download"></i></button>
+                <button class="btn link-primary" ><i class="bi bi-download"></i></button>
+                <button class="btn link-primary" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn link-primary" disabled>Download</button>
+            </div>
+
+
+        </div>
+
+        <!-- secondary link -->
+        <div class="row">
+            <span style="width: 10%;">secondary link</span>
+
+            <div style="width: 65%;">
+                <button class="btn link-secondary" >Download <i class="bi bi-download"></i></button>
+                <button class="btn link-secondary" ><i class="bi bi-download"></i></button>
+                <button class="btn link-secondary" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn link-secondary" disabled>Download</button>
+            </div>
+
+
+        </div>
+
+        <!-- primary ghost -->
+        <div class="row">
+            <span style="width: 10%;">primary ghost</span>
+
+            <div style="width: 65%;">
+                <button class="btn primary-ghost" >Download <i class="bi bi-download"></i></button>
+                <button class="btn primary-ghost" ><i class="bi bi-download"></i></button>
+                <button class="btn primary-ghost"  >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn primary-ghost" disabled>Download</button>
+            </div>
+
+
+        </div>
+
+        <!-- secondary ghost -->
+        <div class="row">
+            <span style="width: 10%;">primary</span>
+
+            <div style="width: 65%;">
+                <button class="btn secondary-ghost" >Download <i class="bi bi-download"></i></button>
+                <button class="btn secondary-ghost" ><i class="bi bi-download"></i></button>
+                <button class="btn secondary-ghost" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn secondary-ghost" disabled >Download</button>
+            </div>
+
+
+        </div>
+
+        <!-- danger -->
+        <div class="row">
+            <span style="width: 10%;">primary</span>
+
+            <div style="width: 65%;">
+                <button class="btn danger" >Download <i class="bi bi-download"></i></button>
+                <button class="btn danger" ><i class="bi bi-download"></i></button>
+                <button class="btn danger" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn danger" disabled >Download</button>
+            </div>
+
+
+        </div>
+
+        <!-- danger ghost -->
+        <div class="row">
+            <span style="width: 10%;">primary</span>
+
+            <div style="width: 65%;">
+                <button class="btn danger-ghost" >Download <i class="bi bi-download"></i></button>
+                <button class="btn danger-ghost" ><i class="bi bi-download"></i></button>
+                <button class="btn danger-ghost" >Download</button>
+            </div>
+            <div style="width: 25%;">
+                <button class="btn danger-ghost" disabled>Download</button>
+            </div>
+
 
         </div>
 
     </div>
-    
+    <script>
+    </script>
 </body>
+
 </html>
