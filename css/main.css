@@ -11962,22 +11962,32 @@ fieldset:disabled .btn {
   border-radius: 0;
 }
 
-.btn:disabled {
+.btn-primary {
+  background-color: #0F61FD;
+}
+
+.btn-primary:disabled {
   border: 0;
-  background-color: #C6C6C6;
-  color: #8D8D8D;
+  background-color: #adb5bd;
+  color: #495057;
   cursor: not-allowed;
   pointer-events: all !important;
 }
 
-.btn:focus {
-  padding: 10px;
-  -webkit-box-shadow: 0 0 0 2px #002D9B;
-          box-shadow: 0 0 0 2px #002D9B;
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 2px #0F61FD;
+          box-shadow: 0 0 0 2px #0F61FD;
   border: 1px solid #fff;
 }
 
-.btn-primary {
-  background-color: #0F61FD;
+.btn-primary:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 0;
+  background-color: #002D9B;
+}
+
+.btn-secondary {
+  background-color: #000;
 }
 /*# sourceMappingURL=main.css.map */
