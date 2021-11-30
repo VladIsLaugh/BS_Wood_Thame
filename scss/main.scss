@@ -10,6 +10,7 @@ button{
 
 .btn{
     border-radius: 0;
+    background-color: $gray-200;
 }
 
 .btn-primary{
@@ -62,4 +63,48 @@ button{
 }
 .danger-ghost{
 
+}
+
+.dropdown-toggle{
+    border-bottom: 2px solid #000;
+}
+.dropdown-toggle:hover{
+    background-color: darken($color: $gray-200, $amount: 5%);
+}
+.dropdown-toggle:active{
+    border-color: $wood_blue;
+    box-shadow: 0 0 0 2px $wood_blue;
+}
+
+.dropdown-toggle:focus{
+  
+}
+.btn-check:focus{
+    box-shadow: 0;
+}
+.btn-check{
+    box-shadow: 0;
+}
+
+.dropdown-menu{
+    background-color: $gray-200;
+    border-radius: 0;
+}
+
+.dropdown-white{
+    @extend .dropdown;
+}
+.dropdown-toggle-white{
+    @extend .dropdown-toggle;
+}
+
+.dropdown-menu-white{
+    @extend .dropdown-menu;
+}
+.dropdown-item-white{
+    @extend .dropdown-item;
+}
+
+.dropdown-item:hover{
+    background-color: darken($color: $gray-200, $amount: 5%);
 }
