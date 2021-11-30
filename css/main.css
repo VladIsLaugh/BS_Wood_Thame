@@ -11988,6 +11988,28 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary {
-  background-color: #000;
+  background-color: #212529;
+}
+
+.btn-secondary:disabled {
+  border: 0;
+  background-color: #adb5bd;
+  color: #495057;
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.btn-secondary:focus {
+  -webkit-box-shadow: 0 0 0 2px #0F61FD;
+          box-shadow: 0 0 0 2px #0F61FD;
+  border: 1px solid #fff;
+  background-color: #495057;
+}
+
+.btn-secondary:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 0;
+  background-color: #6c757d;
 }
 /*# sourceMappingURL=main.css.map */
