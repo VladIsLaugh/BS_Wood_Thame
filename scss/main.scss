@@ -209,6 +209,7 @@ button{
 .secondary-ghost:focus{
     color: $black;
     border: 2px solid $wood_blue;
+    box-shadow: 0 0 0 2px $wood_dark_blue;
     box-shadow: none;
 }
 
@@ -235,26 +236,82 @@ button{
 }
 
 .btn-danger:focus{
-    color: $black;
-    border: 2px solid $wood_blue;
-    box-shadow: none;
+    box-shadow: 0 0 0 2px $wood_blue;
+    border: 1px solid #fff;
+    background-color: $red-218;
 }
 
 .btn-danger:hover{
-    background-color: $gray-300;
-    color: $black;
+    background-color: $red-186;
     box-shadow: none;
 }
 
 .btn-danger:active{
     box-shadow: none !important;
-    color: $black;
     border: 0;
-    background-color: $gray-500;
+    background-color: $red-117;
 }
 .danger-ghost{
-
+    color: $red-218;
 }
+
+.danger-ghost:disabled{
+    border: 0;
+    background-color: inherit;
+    color: $gray-700;
+}
+
+.danger-ghost:focus{
+    box-shadow: 0 0 0 2px $wood_blue;
+    border: 1px solid #fff;
+    background-color: $red-218;
+    color: $white;
+}
+
+.danger-ghost:hover{
+    background-color: $red-186;
+    box-shadow: none;
+    color: $white;
+}
+
+.danger-ghost:active{
+    box-shadow: none !important;
+    border: 0;
+    background-color: $red-117;
+    color: $white;
+}
+
+
+/*Big buttons*/
+.btn-lg-primary{
+    background-color: $wood_blue;
+    color: $white;
+}
+
+.btn-lg-primary:disabled{
+    border: 0;
+    background-color: $gray-500;
+    color: $gray-700;
+}
+
+.btn-lg-primary:focus{
+    box-shadow: 0 0 0 2px $wood_blue;
+    border: 1px solid #fff;
+    background-color: $wood_blue;
+}
+
+.btn-lg-primary:hover{
+    background-color: darken($color: $wood_blue, $amount: 5%);
+    box-shadow: none;
+    color: $white;
+}
+
+.btn-lg-primary:active{
+    border: 0 0 0 2px $wood_blue;
+    background-color: $wood_dark_blue;
+}
+
+
 
 .dropdown-toggle{
     border-bottom: 2px solid #000;
