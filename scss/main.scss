@@ -59,17 +59,127 @@ button{
     background-color: $gray-600;
 }
 .btn-teriary{
-    
+    color: $wood_blue;
+    background-color: $white;
+    outline: 2px solid $wood_blue;
 }
+
+.btn-teriary:disabled{
+    outline: none;
+    border: 0;
+    background-color: $gray-500;
+    color: $gray-700;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+.btn-teriary:focus{
+    box-shadow: 0 0 0 2px $wood_blue;
+    border: 1px solid #fff;
+    background-color: $wood_blue;
+    color: $white;
+}
+
+.btn-teriary:active{
+    box-shadow: 0 0 0 2px $wood_dark_blue;
+    border: 0;
+    background-color: $wood_dark_blue;
+}
+
+.btn-teriary:hover{
+    // box-shadow: none !important;
+    // border: 0;
+    // color: $white;
+    // background-color: $blue;
+    @extend .btn-primary:hover
+}
+
 .link-primary{
-
+    background-color: $white;
 }
-.link-secondary{
 
+.link-primary:disabled{
+    border: 0;
+    background-color: $white;
+    color: $gray-600;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+.link-primary:focus{
+    color: $wood_blue;
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+.link-primary:active{
+    color: $wood_blue;
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+.link-primary:hover{
+    color: $wood_blue;
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+.link-secondary{
+    background-color: $white;
+    color: $black;
+}
+.link-secondary:disabled{
+    border: 0;
+    background-color: $white;
+    color: $gray-600;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+.link-secondary:focus{
+    color: $wood_blue;
+    box-shadow: none;
+}
+
+.link-secondary:active{
+    color: $wood_blue;
+    box-shadow: none;
+}
+
+.link-secondary:hover{
+    color: $wood_blue;
+    box-shadow: none;
 }
 .primary-ghost{
-
+    background-color: $white;
+    color: $wood_blue;
 }
+.primary-ghost:disabled{
+    border: 0;
+    background-color: $white;
+    color: $gray-600;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+.primary-ghost:focus{
+    color: $wood_blue;
+    border: 2px solid $wood_blue;
+    box-shadow: none;
+}
+
+.primary-ghost:hover{
+    background-color: $gray-300;
+    color: $wood_blue;
+    box-shadow: none;
+}
+
+.primary-ghost:active{
+    box-shadow: none !important;
+    border: 0;
+    background-color: $gray-500;
+}
+
 .secondary-ghost{
 
 }
