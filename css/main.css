@@ -12076,12 +12076,12 @@ button {
 }
 
 .link-primary {
-  background-color: #fff;
+  background-color: inherit;
 }
 
 .link-primary:disabled {
   border: 0;
-  background-color: #fff;
+  background-color: inherit;
   color: #6c757d;
   cursor: not-allowed;
   pointer-events: all !important;
@@ -12109,13 +12109,13 @@ button {
 }
 
 .link-secondary {
-  background-color: #fff;
+  background-color: inherit;
   color: #000;
 }
 
 .link-secondary:disabled {
   border: 0;
-  background-color: #fff;
+  background-color: inherit;
   color: #6c757d;
   cursor: not-allowed;
   pointer-events: all !important;
@@ -12140,13 +12140,13 @@ button {
 }
 
 .primary-ghost {
-  background-color: #fff;
+  background-color: inherit;
   color: #0F61FD;
 }
 
 .primary-ghost:disabled {
   border: 0;
-  background-color: #fff;
+  background-color: inherit;
   color: #6c757d;
   cursor: not-allowed;
   pointer-events: all !important;
@@ -12169,6 +12169,41 @@ button {
 .primary-ghost:active {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  border: 0;
+  background-color: #adb5bd;
+}
+
+.secondary-ghost {
+  background-color: inherit;
+  color: #000;
+}
+
+.secondary-ghost:disabled {
+  border: 0;
+  background-color: inherit;
+  color: #6c757d;
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.secondary-ghost:focus {
+  color: #000;
+  border: 2px solid #0F61FD;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.secondary-ghost:hover {
+  background-color: #dee2e6;
+  color: #000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.secondary-ghost:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #000;
   border: 0;
   background-color: #adb5bd;
 }
