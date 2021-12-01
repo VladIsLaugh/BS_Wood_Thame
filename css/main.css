@@ -12208,6 +12208,39 @@ button {
   background-color: #adb5bd;
 }
 
+.btn-danger {
+  background-color: #DA1E28;
+  color: #fff;
+}
+
+.btn-danger:disabled {
+  border: 0;
+  background-color: #adb5bd;
+  color: #495057;
+}
+
+.btn-danger:focus {
+  color: #000;
+  border: 2px solid #0F61FD;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-danger:hover {
+  background-color: #dee2e6;
+  color: #000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-danger:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #000;
+  border: 0;
+  background-color: #adb5bd;
+}
+
 .dropdown-toggle, .dropdown-toggle-white {
   border-bottom: 2px solid #000;
 }
