@@ -1,8 +1,21 @@
 $wood_blue: #0F61FD;
 $wood_dark_blue: #002D9B;
 
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$light_gray:#F7F7F7;
+
+*:disabled{
+    cursor: not-allowed;
+    pointer-events: all !important;
+    border-radius: 0;
+}
+
+body{
+    background-color: $light_gray; 
+}
 
 button{
     margin: 0;
@@ -10,7 +23,7 @@ button{
 
 .btn{
     border-radius: 0;
-    background-color: $gray-200;
+    background-color: $light_gray;
 }
 
 .btn-primary{
@@ -21,8 +34,7 @@ button{
     border: 0;
     background-color: $gray-500;
     color: $gray-700;
-    cursor: not-allowed;
-    pointer-events: all !important;
+
 }
 .btn-primary:focus{
     box-shadow: 0 0 0 2px $wood_blue;
@@ -68,17 +80,17 @@ button{
 .dropdown-toggle{
     border-bottom: 2px solid #000;
 }
+.dropdown-toggle:disabled{
+    border-bottom:0;
+}
 .dropdown-toggle:hover{
-    background-color: darken($color: $gray-200, $amount: 5%);
+    background-color: darken($color: $light_gray, $amount: 5%)!important;
 }
 .dropdown-toggle:active{
     border-color: $wood_blue;
     box-shadow: 0 0 0 2px $wood_blue;
 }
 
-.dropdown-toggle:focus{
-  
-}
 .btn-check:focus{
     box-shadow: 0;
 }
@@ -87,7 +99,7 @@ button{
 }
 
 .dropdown-menu{
-    background-color: $gray-200;
+    background-color: $light_gray;
     border-radius: 0;
 }
 
@@ -106,5 +118,10 @@ button{
 }
 
 .dropdown-item:hover{
-    background-color: darken($color: $gray-200, $amount: 5%);
+    background-color: darken($color: $light_gray, $amount: 5%);
+    cursor: pointer;
+}
+
+.dropdown-item:active{
+    color: inherit
 }
