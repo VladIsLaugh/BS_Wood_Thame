@@ -12189,6 +12189,8 @@ button {
 .secondary-ghost:focus {
   color: #000;
   border: 2px solid #0F61FD;
+  -webkit-box-shadow: 0 0 0 2px #002D9B;
+          box-shadow: 0 0 0 2px #002D9B;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -12220,15 +12222,14 @@ button {
 }
 
 .btn-danger:focus {
-  color: #000;
-  border: 2px solid #0F61FD;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 0 0 0 2px #0F61FD;
+          box-shadow: 0 0 0 2px #0F61FD;
+  border: 1px solid #fff;
+  background-color: #DA1E28;
 }
 
 .btn-danger:hover {
-  background-color: #dee2e6;
-  color: #000;
+  background-color: #BA1B23;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -12236,9 +12237,72 @@ button {
 .btn-danger:active {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  color: #000;
+  border: 0;
+  background-color: #750E13;
+}
+
+.danger-ghost {
+  color: #DA1E28;
+}
+
+.danger-ghost:disabled {
+  border: 0;
+  background-color: inherit;
+  color: #495057;
+}
+
+.danger-ghost:focus {
+  -webkit-box-shadow: 0 0 0 2px #0F61FD;
+          box-shadow: 0 0 0 2px #0F61FD;
+  border: 1px solid #fff;
+  background-color: #DA1E28;
+  color: #fff;
+}
+
+.danger-ghost:hover {
+  background-color: #BA1B23;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.danger-ghost:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 0;
+  background-color: #750E13;
+  color: #fff;
+}
+
+/*Big buttons*/
+.btn-lg-primary {
+  background-color: #0F61FD;
+  color: #fff;
+}
+
+.btn-lg-primary:disabled {
   border: 0;
   background-color: #adb5bd;
+  color: #495057;
+}
+
+.btn-lg-primary:focus {
+  -webkit-box-shadow: 0 0 0 2px #0F61FD;
+          box-shadow: 0 0 0 2px #0F61FD;
+  border: 1px solid #fff;
+  background-color: #0F61FD;
+}
+
+.btn-lg-primary:hover {
+  background-color: #0254f0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.btn-lg-primary:active {
+  border: 0 0 0 2px #0F61FD;
+  background-color: #002D9B;
 }
 
 .dropdown-toggle, .dropdown-toggle-white {
