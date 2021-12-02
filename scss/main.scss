@@ -307,10 +307,90 @@ button{
 }
 
 .btn-lg-primary:active{
-    border: 0 0 0 2px $wood_blue;
     background-color: $wood_dark_blue;
 }
 
+.btn-lg-secondary{
+    background-color: $gray-900;
+    color: $white;
+}
+.btn-lg-secondary:disabled{
+    border: 0;
+    background-color: $gray-500;
+    color: $gray-700;
+}
+
+.btn-lg-secondary:focus{
+    box-shadow: 0 0 0 2px $wood_blue;
+    border: 1px solid #fff;
+    background-color: $gray-700;
+}
+
+.btn-lg-secondary:hover{
+    background-color: darken($color: $gray-700, $amount: 5%);
+    box-shadow: none;
+    color: $white;
+}
+
+.btn-lg-secondary:active{
+    background-color: $gray-600;
+}
+
+.btn-lg-ghost {
+    background-color: $white;
+    color: $wood_blue;
+}
+    
+.btn-lg-ghost:disabled{
+    border: 0;
+    background-color: $white;
+    color: $gray-600;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+    
+.btn-lg-ghost:focus{
+    color: $wood_blue;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 2px $wood_blue;
+}
+    
+.btn-lg-ghost:hover{
+    box-shadow: none;
+    background-color: $gray-300;
+    color: $wood_blue;
+}
+.btn-lg-ghost:active{
+    color: $wood_blue;
+    background-color: $gray-500;
+}
+
+.btn-lg-danger{
+    background-color: $red-218;
+    color: $white;
+}
+
+.btn-lg-danger:disabled{
+    border: 0;
+    background-color: $gray-500;
+    color: $gray-700;
+}
+
+.btn-lg-danger:focus{
+    box-shadow: 0 0 0 2px $wood_blue;
+    border: 1px solid #fff;
+    background-color: $red-218;
+    color: $white;
+}
+
+.btn-lg-danger:hover{
+    background-color: $red-186;
+    box-shadow: none;
+    color: $white;
+}
+.btn-lg-danger:active{
+    background-color: $red-117;
+}
 
 
 .dropdown-toggle{
