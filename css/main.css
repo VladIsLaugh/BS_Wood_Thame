@@ -12395,6 +12395,43 @@ button {
   background-color: #750E13;
 }
 
+.btn-pagination {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-pagination:disabled {
+  border: 0;
+  background-color: #fff;
+  color: #6c757d;
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.btn-pagination:focus {
+  color: #000;
+  border: 2px solid #0F61FD;
+  -webkit-box-shadow: 0 0 0 2px #002D9B;
+          box-shadow: 0 0 0 2px #002D9B;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-pagination:hover {
+  background-color: #dee2e6;
+  color: #000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-pagination:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #000;
+  border: 0;
+  background-color: #adb5bd;
+}
+
 .dropdown-toggle, .dropdown-toggle-white {
   border-bottom: 2px solid #000;
 }
