@@ -389,6 +389,39 @@ button {
     background-color: $red-117;
 }
 
+//buttons - inline&pagination
+.btn-pagination{
+    background-color: $white;
+    color: $black;
+}
+.btn-pagination:disabled{
+    border: 0;
+    background-color: $white;
+    color: $gray-600;
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+.btn-pagination:focus{
+    color: $black;
+    border: 2px solid $wood_blue;
+    box-shadow: 0 0 0 2px $wood_dark_blue;
+    box-shadow: none;
+}
+
+.btn-pagination:hover{
+    background-color: $gray-300;
+    color: $black;
+    box-shadow: none;
+}
+
+.btn-pagination:active{
+    box-shadow: none !important;
+    color: $black;
+    border: 0;
+    background-color: $gray-500;
+}
+
 .dropdown-toggle {
     border-bottom: 2px solid $gray-600;
 }
