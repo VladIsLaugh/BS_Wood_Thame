@@ -427,3 +427,28 @@ button{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .navbar-collapse{
+      background-color: #fff;
+  }
+
+  .active{
+      border-bottom: 3px solid $wood_blue;
+      color: $wood_blue;
+    
+  }
+
+.navbar-light .navbar-nav .nav-link{
+      color: inherit;
+      padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-weight: 500;
+  }
+
+
+  .badge{
+      border-radius:0;
+      font-weight: 500;
+  }
+
+  
